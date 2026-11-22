@@ -1,0 +1,14 @@
+# Ignore raw dataset images & cached outputs (too large for Git)
+data/raw/*
+!data/raw/.gitkeep
+approach_a/outputs/**/*
+!approach_a/outputs/**/.gitkeep
+approach_b/outputs/**/*
+!approach_b/outputs/**/.gitkeep
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+venv/
