@@ -1,14 +1,32 @@
-# Ignore raw dataset images & cached outputs (too large for Git)
+# Raw dataset images
 data/raw/*
 !data/raw/.gitkeep
-approach_a/outputs/**/*
-!approach_a/outputs/**/.gitkeep
-approach_b/outputs/**/*
-!approach_b/outputs/**/.gitkeep
 
-# Python artifacts
+# Cached features & trained models (too large for Git)
+approach_a/outputs/features/*
+!approach_a/outputs/features/.gitkeep
+approach_a/outputs/models/*
+!approach_a/outputs/models/.gitkeep
+
+approach_b/outputs/models/*
+!approach_b/outputs/models/.gitkeep
+
+# Model weights & arrays anywhere in repo
+*.npz
+*.joblib
+*.pth
+*.pt
+
+# Virtual environments & Python cache
+venv/
+.venv/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .env
-venv/
+
+# OS & editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
